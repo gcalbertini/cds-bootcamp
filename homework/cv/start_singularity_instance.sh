@@ -16,9 +16,9 @@ set -e
 # from the NFS. However, this can be slow, and hence it is often better
 # to first copy that file into a local temporary directory (e.g. /tmp),
 # and access the file from that local directory.
-DATA_DIRECTORY=${DATA_DIRECTORY:-/scratch/wz2247/data/}
+DATA_DIRECTORY=${DATA_DIRECTORY:-/scratch/ga947/data/}
 
-IMAGE=${IMAGE:-/scratch/wz2247/singularity/images/pytorch_22.08-py3.sif}
+IMAGE=${IMAGE:-/scratch/ga947/singularity/images/pytorch_22.08-py3.sif}
 
 INSTANCE_NAME=${INSTANCE_NAME:-mycontainer}
 
@@ -37,7 +37,7 @@ TMP_OVERLAY_SOURCE=${TMP_OVERLAY_SOURCE:-overlay-5GB-3.2M.ext3}
 # Note: on GCP the overlay directory does not exist
 OVERLAY_DIRECTORY=/scratch/work/public/overlay-fs-ext3/
 if [[ ! -d $OVERLAY_DIRECTORY ]]; then
-OVERLAY_DIRECTORY=/scratch/wz2247/singularity/overlays/
+OVERLAY_DIRECTORY=/scratch/ga947/singularity/overlays/
 fi
 
 # First, check that the temp overlay exists. Otherwise grap it from the overlays.
