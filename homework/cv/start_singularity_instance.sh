@@ -37,7 +37,7 @@ TMP_OVERLAY_SOURCE=${TMP_OVERLAY_SOURCE:-overlay-5GB-3.2M.ext3}
 # Note: on GCP the overlay directory does not exist
 OVERLAY_DIRECTORY=/scratch/work/public/overlay-fs-ext3/
 if [[ ! -d $OVERLAY_DIRECTORY ]]; then
-OVERLAY_DIRECTORY=/scratch/ga947/singularity/overlays/
+OVERLAY_DIRECTORY=/scratch/wz2247/singularity/overlays/
 fi
 
 # First, check that the temp overlay exists. Otherwise grap it from the overlays.
