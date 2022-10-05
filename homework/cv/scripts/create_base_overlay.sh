@@ -6,10 +6,10 @@ set -e
 # Note: on GCP the overlay directory does not exist
 OVERLAY_DIRECTORY=/scratch/work/public/overlay-fs-ext3/
 if [[ ! -d $OVERLAY_DIRECTORY ]]; then
-OVERLAY_DIRECTORY=/scratch/wz2247/singularity/overlays/
+OVERLAY_DIRECTORY=/scratch/ga947/singularity/overlays/
 fi
 
-IMAGE_DIRECTORY=/scratch/wz2247/singularity/images/
+IMAGE_DIRECTORY=/scratch/ga947/singularity/images/
 
 # Set this to the overlay to use for base packages
 BASE_PACKAGES_OVERLAY=overlay-7.5GB-300K.ext3
